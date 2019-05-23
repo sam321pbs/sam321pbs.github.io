@@ -1,0 +1,8 @@
+.search {
+  @include center-item;
+  width: 500px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: $color-light-gray;
+}

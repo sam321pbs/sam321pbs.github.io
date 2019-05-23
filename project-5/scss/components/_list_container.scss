@@ -1,0 +1,8 @@
+.list-container {
+  @include center-item;
+}
+
+.list {
+  @include center-item;
+  width: fit-content;
+}

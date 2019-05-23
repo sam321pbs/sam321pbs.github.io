@@ -1,0 +1,39 @@
+li {
+  display: inline;
+}
+
+li:nth-child(4n):after {
+  content: "\a";
+  white-space: pre;
+}
+
+.search {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+
+.image {
+  margin: 15px;
+  background-color: blue;
+}
+
+.list-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+/*# sourceMappingURL=styles.css.map */

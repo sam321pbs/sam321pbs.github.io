@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/switch.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="head">
+            <h3>YourApp</h3>
+            <div class="account">
+                <img class="notification-icon" src="icons/icon-bell.svg" alt="bell">
+                <div class="circle-green-small"></div>
+                <div class="line"></div>
+                <img class="profile-small" src="images/member-1.jpg" alt="profile">
+                <p class="text-white">Josh Sullivan</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="nav-item"><img src="icons/icon-dashboard.svg"></li>
+            <li><img src="icons/icon-members.svg"></li>
+            <li><img src="icons/icon-visits.svg"></li>
+            <li><img src="icons/icon-settings.svg"></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="dashboard-head">
+            <p class="text-dashboard">Dashboard</p>
+            <div class="search-container">
+                <input class="search-input" type="search" placeholder="search">
+            </div>
+        </div>
+
+        <div class="alert">
+            <div class="alert-message">
+                <p class="text-white"><strong>Alert</strong></p>
+                <p class="alert-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, architecto consequatur debitis
+                    delectus deserunt
+                </p>
+            </div>
+            <p id="alert_cancel" class="text-white alert-cancel"><strong>x</strong></p>
+        </div>
+        <div class="head">
+            <p class="section-title">TRAFFIC</p>
+            <div class="display-by">
+                <p class="tab">Hourly</p>
+                <p class="tab">Daily</p>
+                <p class="lime-background">Weekly</p>
+                <p class="tab">Monthly</p>
+            </div>
+        </div>
+
+        <div class="chart-wrapper">
+            <div>
+                <canvas id="lineChart"></canvas>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Daily section-->
+    <div class="daily">
+        <div class="head">
+            <p class="section-title">DAILY TRAFFIC</p>
+        </div>
+
+        <div class="chart-wrapper">
+            <div>
+                <canvas id="dailyTraffic"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!--Users section-->
+    <div class="users">
+        <div class="head">
+            <p class="section-title">MOBILE USERS</p>
+        </div>
+
+        <div class="chart-wrapper">
+            <div>
+                <canvas id="mobileUsers"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!--Social section-->
+    <div class="social">
+        <div class="head">
+            <p class="section-title">SOCIAL STATS</p>
+        </div>
+        <div class="social-container">
+            <div class="social-1">
+                <div class="space-social">
+                    <div class="social-icon">
+                        <img src="icons/icon-twitter.svg">
+                    </div>
+                    <div>
+                        <h5 class="social-heading">Twitter</h5>
+                        <p class="social-num">10,345</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-1">
+                <div class="space-social">
+                    <div class="social-icon">
+                        <img src="icons/icon-facebook.svg">
+                    </div>
+                    <div>
+                        <h5 class="social-heading">Facebook</h5>
+                        <p class="social-num">8,739</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-1">
+                <div class="space-social">
+                    <div class="social-icon">
+                        <img src="icons/icon-google-plus.svg">
+                    </div>
+                    <div>
+                        <p class="social-heading">Google+</p>
+                        <p class="social-num">2,530</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Members section-->
+    <div class="members">
+        <div class="head">
+            <p class="section-title">NEW MEMBERS</p>
+        </div>
+
+        <div class="member-container">
+            <div class="member-item">
+                <div class="contain">
+                    <img class="circle-item" src="images/member-1.jpg">
+                    <div class="member-detail">
+                        <p>Victoria Chambers</p>
+                        <p class="email-text">victoria.chambers80@example.com</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <p>10/15/15</p>
+                </div>
+            </div>
+
+            <div class="member-item divider"></div>
+
+            <div class="member-item">
+                <div class="contain">
+                    <img class="circle-item" src="images/member-2.jpg">
+                    <div class="member-detail">
+                        <p>Victoria Chambers</p>
+                        <p class="email-text">victoria.chambers80@example.com</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <p>10/15/15</p>
+                </div>
+            </div>
+
+            <div class="member-item divider"></div>
+
+            <div class="member-item">
+                <div class="contain">
+                    <img class="circle-item" src="images/member-3.jpg">
+                    <div class="member-detail">
+                        <p>Victoria Chambers</p>
+                        <p class="email-text">victoria.chambers80@example.com</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <p>10/15/15</p>
+                </div>
+            </div>
+
+            <div class="member-item divider"></div>
+
+            <div class="member-item">
+                <div class="contain">
+                    <img class="circle-item" src="images/member-4.jpg">
+                    <div class="member-detail">
+                        <p>Victoria Chambers</p>
+                        <p class="email-text">victoria.chambers80@example.com</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <p>10/15/15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Recent section-->
+    <div class="recent">
+        <div class="head">
+            <p class="section-title">RECENT ACTIVITY</p>
+        </div>
+
+        <div class="member-container">
+            <div class="member-item">
+                <div class="contain">
+                    <img class="circle-item" src="images/member-1.jpg">
+                    <div class="member-detail">
+                        <p>Victoria Chambers commented on YourApp's SEO tips</p>
+                        <p>4 hours ago</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <p> > </p>
+                </div>
+            </div>
+
+            <div class="member-item divider"></div>
+
+            <div class="member-item">
+                <div class="contain">
+                    <img class="circle-item" src="images/member-2.jpg">
+                    <div class="member-detail">
+                        <p>Dale Byrd like the post Facebook's Changes for 2016</p>
+                        <p>5 hours ago</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <p> > </p>
+                </div>
+            </div>
+
+            <div class="member-item divider"></div>
+
+            <div class="member-item">
+                <div class="contain">
+                    <img class="circle-item" src="images/member-3.jpg">
+                    <div class="member-detail">
+                        <p>Dawn Wood commented Facebook's Changes for 2016</p>
+                        <p>5 hours ago</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <p> > </p>
+                </div>
+            </div>
+
+            <div class="member-item divider"></div>
+
+            <div class="member-item">
+                <div class="contain">
+                    <img class="circle-item" src="images/member-4.jpg">
+                    <div class="member-detail">
+                        <p>Dan Oliver posted on YourApp's SEO Tips</p>
+                        <p>1 day ago</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <p> > </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Message section-->
+    <div class="message">
+        <div class="head">
+            <p class="section-title">MESSAGE USERS</p>
+        </div>
+
+        <div class="section-container">
+            <form class="form" onsubmit="event.preventDefault();">
+                <input class="shaded-background message-area" type="text" id="user-search"
+                       placeholder="Search for user">
+                <textarea id="message" class="shaded-background message-area" placeholder="Message for user"></textarea>
+                <button id="submit-bttn" class="bttn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Settings section-->
+    <div class="settings">
+        <div class="head">
+            <p class="section-title">SETTINGS</p>
+        </div>
+
+        <div class="section-container">
+            <div class="column-container">
+                <div class="contain switch-contain-width">
+                    <p>Send Email Notifications</p>
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="myonoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="contain switch-contain-width">
+                    <p>Set Profile To Public</p>
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="onOffPublic" class="onoffswitch-checkbox" id="onOffPublic">
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <select>
+                <option value="0">Select timezone</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <div class="bttn-container">
+                <button class="bttn">Save</button>
+                <button class="bttn cancel-bttn">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/main.js"></script>
+</html>

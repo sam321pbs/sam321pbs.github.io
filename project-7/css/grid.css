@@ -1,0 +1,82 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+
+.container {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    grid-template-rows: 100px minmax(150px, auto);
+    grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "daily"
+            "users"
+            "social"
+            "members"
+            "recent"
+            "message"
+            "settings";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+.daily {
+    grid-area: daily;
+}
+
+.users {
+    grid-area: users;
+}
+
+.social {
+    grid-area: social;
+}
+
+.members {
+    grid-area: members;
+}
+
+.recent {
+    grid-area: recent;
+}
+
+.message {
+    grid-area: message;
+}
+
+.settings {
+    grid-area: settings;
+
+}
+
+@media (min-width: 950px) {
+    .container {
+        display: grid;
+        grid-auto-rows: minmax(150px, auto);
+        grid-template-columns: 100px 1fr 1fr;
+        grid-template-rows:100px repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-areas:
+                "header header header"
+                "nav main main"
+                "nav daily users"
+                "nav social social"
+                "nav members recent"
+                "nav message settings";
+    }
+}
+
+
+

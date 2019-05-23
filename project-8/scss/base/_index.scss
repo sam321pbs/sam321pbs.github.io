@@ -1,0 +1,24 @@
+@import "../utilities";
+
+body {
+  background-color: $color-tint;
+}
+
+h3 {
+  color: $color-title;
+}
+
+img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+

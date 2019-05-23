@@ -1,0 +1,160 @@
+body {
+  background-color: #f1f1f1;
+}
+
+h3 {
+  color: #7a7a7a;
+}
+
+img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+.employee-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  height: 150px;
+  width: 390px;
+  border-radius: 6px;
+  border-color: #c2c2c2;
+  border-style: solid;
+  border-width: 2px;
+  background-color: white;
+  margin: 10px;
+}
+
+.employee-details-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 83%;
+}
+
+.info-container {
+  margin: 8px;
+}
+
+.employee-image {
+  height: 100px;
+  width: 100px;
+}
+
+.email {
+  color: #c2c2c2;
+}
+
+.location {
+  color: #c2c2c2;
+}
+
+.container {
+  margin: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 33%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 6px;
+}
+@media (min-width: 500px) {
+  .modal-content {
+    width: 80%;
+  }
+}
+@media (min-width: 800px) {
+  .modal-content {
+    width: 33%;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-employee-container,
+.modal-employee-details-container,
+.modal-employee-image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-location,
+.modal-email,
+.modal-phone,
+.modal-address,
+.modal-dob {
+  color: #c2c2c2;
+  text-align: center;
+}
+
+.modal-name {
+  text-align: center;
+}
+
+.seprator {
+  height: 1px;
+  width: 80%;
+  background-color: #c2c2c2;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

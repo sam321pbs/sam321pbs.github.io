@@ -1,0 +1,25 @@
+.modal-employee-container,
+.modal-employee-details-container,
+.modal-employee-image {
+  @include center;
+}
+
+.modal-location,
+.modal-email,
+.modal-phone,
+.modal-address,
+.modal-dob {
+  color: $color-light-gray;
+  text-align: center;
+}
+
+.modal-name {
+  text-align: center;
+}
+
+.seprator {
+  height: 1px;
+  width: 80%;
+  background-color: $color-light-gray;
+  @include center;
+}

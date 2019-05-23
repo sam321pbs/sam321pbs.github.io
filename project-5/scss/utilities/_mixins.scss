@@ -1,0 +1,15 @@
+@mixin center-item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin grid-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: space-between;
+}

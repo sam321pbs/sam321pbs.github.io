@@ -1,0 +1,8 @@
+li {
+  display: inline;
+}
+
+li:nth-child(4n):after {
+  content:"\A";
+  white-space:pre;
+}
